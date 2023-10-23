@@ -1,0 +1,36 @@
+.navbar__nav {
+  gap: 78.33px;
+  padding-block-start: 25px;
+  padding-block-end: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar__nav {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar__nav {
+    gap: 16px;
+  }
+}
+
+.navbar__nav li a {
+  color: var(--color-black);
+  font-size: 1.125rem;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  padding-bottom: 25px;
+  border-bottom: 4px solid var(--text-color-white);
+  width: 0;
+  display: inline;
+}
+.navbar__nav li a:hover {
+  color: var(--color-primary);
+}
+
+.navbar__nav li a.active {
+  color: var(--color-primary) !important;
+  text-decoration: none;
+  border-color: var(--color-primary);
+  width: 100%;
+}

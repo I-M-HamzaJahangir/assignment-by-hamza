@@ -1,0 +1,51 @@
+.faq__section {
+  margin-block: 80px;
+}
+
+.main__heading {
+  margin-bottom: 76px;
+}
+.main__heading h1 {
+  color: var(--color-light-dark);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+}
+
+.main__heading h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 119px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: calc(100% + 30px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq__section button {
+  padding-inline-start: 54px;
+  border: none;
+  outline: none;
+  background-color: var(--text-color-white);
+}
+.faq__section button:focus {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.faq__section button:not(.collapsed) {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.faq__section button::after {
+  margin-left: unset;
+  position: absolute;
+  left: 23px;
+}

@@ -1,0 +1,48 @@
+.team__card {
+  background: var(--color-light-grey);
+  padding-inline: 15px;
+  border-radius: 6px;
+  height: 290px;
+  position: relative;
+  max-width: 350px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.team__card h4 {
+  color: var(--color-light-dark);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.team__card p {
+  color: var(--text-light-grey);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.img__wrapper {
+  position: relative;
+  height: 115px;
+  transition: all 0.2s ease-in-out;
+}
+.img__wrapper img {
+  width: 183px;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: -65%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1199px) {
+  .team__card {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .team__card {
+    height: 320px;
+  }
+}

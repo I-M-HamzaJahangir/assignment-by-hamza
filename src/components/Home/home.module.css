@@ -1,0 +1,53 @@
+.home__section {
+  margin-bottom: 80px;
+}
+.hero__container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.content h1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  margin-block-end: 25px;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 500;
+  width: 947px;
+  max-width: 947px;
+  margin-inline: auto;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .content h1 {
+    font-size: 34px;
+  }
+  .content p {
+    font-size: 16px;
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .content h1 {
+    font-size: 24px;
+    margin-block-end: 16px;
+  }
+  .content p {
+    font-size: 16px;
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
+  .hero__container img {
+    min-height: 360px;
+    object-fit: cover;
+  }
+}

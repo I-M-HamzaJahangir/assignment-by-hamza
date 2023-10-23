@@ -1,0 +1,55 @@
+.about__section {
+  padding-block: 80px;
+}
+.about__section h1 {
+  color: var(--color-light-dark);
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  max-width: 191px;
+  margin-inline: auto;
+  /* margin-block-end: 30px; */
+}
+
+.about__section h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  max-width: 119px;
+  margin-block-start: 30px;
+  margin-inline: auto;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+}
+
+.about__section p {
+  color: var(--color-light-dark);
+  margin-block-start: 26px;
+  margin-block-end: 41px;
+  color: #363636;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  max-width: 1110px;
+  margin-inline: auto;
+}
+.about__section p::before {
+  content: "";
+  display: block;
+  background: url("../../assets/images/dots-shape.png");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: left; */
+  height: 95px;
+  width: 82px;
+  position: absolute;
+  top: -80%;
+  left: -7%;
+}
+
+@media only screen and (max-width: 767px) {
+  .about__section p::before {
+    display: none;
+  }
+}

@@ -1,0 +1,105 @@
+.process__section {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 54px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.process__section button {
+  margin-block-start: 48px;
+  width: 171px;
+  height: 45px;
+  border: 1px solid var(--color-primary);
+  outline: none;
+  box-shadow: none;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  color: var(--text-color-white);
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+.process__section button:hover {
+  background-color: var(--text-color-white);
+  color: var(--color-primary);
+}
+.main__heading {
+  margin-bottom: 76px;
+}
+.main__heading h1 {
+  color: var(--color-light-dark);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+}
+
+.main__heading h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 119px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: calc(100% + 30px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frame__wrapper {
+  display: flex;
+  row-gap: 20px;
+}
+.frame__wrapper > div {
+  position: relative;
+}
+.frame__content {
+  position: absolute;
+  inset-inline: 13px;
+  inset-block: 13px;
+  padding-inline: 16px;
+  background-color: var(--text-color-white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 14px;
+  max-width: 227px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 27px;
+  row-gap: 18px;
+}
+
+.frame__content h6 {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .frame__wrapper {
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+}
+@media only screen and (max-width: 991px) {
+  .frame__wrapper {
+    justify-content: center;
+  }
+  .frame__wrapper > div:nth-child(3) {
+    margin-left: -30px;
+  }
+  .frame__wrapper > div:nth-child(4) {
+    margin-left: 2px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* .frame__wrapper {
+    justify-content: center;
+  } */
+  .frame__wrapper > div:nth-child(3) {
+    margin-left: unset;
+  }
+  .frame__wrapper > div:nth-child(4) {
+    margin-left: -26px;
+  }
+}
